@@ -1,4 +1,5 @@
 {
+  "homepage": "http://hafizi1997.github.io/project-1",
   "name": "try1",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,5 +48,8 @@
   "description": "hosting",
   "main": "index.js",
   "author": "fizi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
